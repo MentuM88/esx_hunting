@@ -186,7 +186,7 @@ function StartHuntingSession()
 											SlaughterAnimal(value.id)
 										end
 									else
-										ESX.ShowNotification('You need to use the knife!')
+										ESX.ShowNotification('Você precisa usar a faca!')
 									end
 								end
 
@@ -214,7 +214,7 @@ function SlaughterAnimal(AnimalId)
 
 	local AnimalWeight = math.random(10, 160) / 10
 
-	ESX.ShowNotification('You slaughtered the animal and recieved an meat of ' ..AnimalWeight.. 'kg')
+	ESX.ShowNotification('Você abateu o animal e descobriu carnes de ' ..AnimalWeight.. 'kg')
 
 	TriggerServerEvent('esx-qalle-hunting:reward', AnimalWeight)
 
